@@ -9,6 +9,7 @@ import {
   IconButton,
   Typography,
   Box,
+  Grid,
 } from '@mui/material'
 
 export default function DialogUploadForm() {
@@ -53,8 +54,21 @@ export default function DialogUploadForm() {
         >
           <CloseIcon />
         </IconButton>
-        <DialogContent dividers></DialogContent>
-        <DialogActions>
+        <DialogContent dividers>
+          <Grid container>
+            <Grid item md={6} sx={{ width: '500px' }}>
+              <Typography>Left Side</Typography>
+            </Grid>
+            <Grid item md={6} sx={{ width: '500px' }}>
+              {' '}
+              <Typography>Right Side</Typography>
+            </Grid>
+          </Grid>
+          <Typography align={'center'}>
+            Data in the import file is correct. Please press continue to import.
+          </Typography>
+        </DialogContent>
+        <DialogActions sx={{ justifyContent: 'center' }}>
           <Button autoFocus onClick={handleClose}>
             Continue Import
           </Button>
