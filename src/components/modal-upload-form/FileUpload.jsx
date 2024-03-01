@@ -10,7 +10,6 @@ const FileUpload = ({ onFileUpload }) => {
     if (acceptedFiles && acceptedFiles.length > 0) {
       const file = acceptedFiles[0]
       onFileUpload(file)
-      // Generate a preview for image files
       if (file.type.startsWith('image/')) {
         const reader = new FileReader()
         reader.onload = () => {
@@ -26,7 +25,7 @@ const FileUpload = ({ onFileUpload }) => {
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const handleSubmit = () => {
-    // You can add logic to handle the file submission here
+    // TODO: add logic to for submission
     console.log('File submitted!')
   }
 
