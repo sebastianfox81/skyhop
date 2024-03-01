@@ -46,7 +46,7 @@ const ClientForm = () => {
       {clientData &&
         clientData?.map((client) => {
           return (
-            <Stack direction='row' mb={2} alignItems={'center'}>
+            <Stack key={client.id} direction='row' mb={2} alignItems={'center'}>
               <Typography mr={3}>{client.name}</Typography>
               <FormControl
                 sx={{
