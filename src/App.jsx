@@ -1,9 +1,9 @@
-import DialogUploadForm from './components/modal-upload-form/DialogUploadForm'
+import FormContainer from './components/modal-upload-form/FormContainer'
 
 function App() {
   return (
     <>
-      <DialogUploadForm />
+      <FormContainer />
     </>
   )
 }
