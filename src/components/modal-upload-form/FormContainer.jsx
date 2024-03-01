@@ -62,6 +62,10 @@ export default function FormContainer() {
             background: '#032679',
             borderRadius: '20%',
             padding: '6px',
+            '&: hover': {
+              color: '#032679',
+              border: 'solid 1px #032679',
+            },
           }}
         >
           <CloseIcon />
