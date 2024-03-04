@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Typography, Grid, Stack } from '@mui/material'
-import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined'
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder'
 
 import ToggleSwitch from './ToggleSwitch'
 
@@ -14,7 +14,7 @@ const Tolerance = () => {
         </Grid>
         <Grid item pl={2}>
           <Stack direction={'row'}>
-            <AddCircleOutlineOutlinedIcon />
+            <QueryBuilderIcon />
             <Typography ml={0.5}>Select Tolerance Level</Typography>
           </Stack>
         </Grid>

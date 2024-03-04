@@ -11,8 +11,7 @@ import {
   Typography,
 } from '@mui/material'
 
-import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined'
-
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder'
 const clientData = [
   { id: 1, name: 'Testing Center 1' },
   { id: 2, name: 'Testing Center 2' },
@@ -66,7 +65,7 @@ const ClientForm = () => {
                   label='Select Client'
                 ></Select>
               </FormControl>
-              <AddCircleOutlineOutlinedIcon />
+              <QueryBuilderIcon />
             </Stack>
           )
         })}
