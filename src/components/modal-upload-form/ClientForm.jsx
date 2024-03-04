@@ -65,7 +65,9 @@ const ClientForm = () => {
                   label='Select Client'
                 ></Select>
               </FormControl>
-              <QueryBuilderIcon />
+              <QueryBuilderIcon
+                sx={{ transform: 'scaleX(-1) rotate(90deg)' }}
+              />
             </Stack>
           )
         })}

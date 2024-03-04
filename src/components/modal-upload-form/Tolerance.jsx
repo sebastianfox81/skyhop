@@ -14,7 +14,7 @@ const Tolerance = () => {
         </Grid>
         <Grid item pl={2}>
           <Stack direction={'row'}>
-            <QueryBuilderIcon />
+            <QueryBuilderIcon sx={{ transform: 'scaleX(-1) rotate(90deg)' }} />
             <Typography ml={0.5}>Select Tolerance Level</Typography>
           </Stack>
         </Grid>
